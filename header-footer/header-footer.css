@@ -23,6 +23,7 @@
 }
 
 .navbar {
+  background: rgba(57, 62, 70, 0.9) !important;
   box-shadow: 0 8px 32px 0 rgba(57, 62, 70, 0.37);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
@@ -63,12 +64,6 @@
 
 .navbar a:hover {
   color: var(--verde);
-}
-
-/* ------------------------------- */
-.dropdown-menu show {
-  left: unset;
-  right: 0%;
 }
 
 .dropdown-item:active {
