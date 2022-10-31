@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: red 1px solid ; */
 }
 :root {
   --azul-mais-escuro:#393E46;
@@ -101,9 +102,11 @@ main{
 .background-wave div{
   display: flex;
   align-items: end;
+  width: 45%;
   height: 56%;
 }
 .title-top-main{
+  text-align: center;
   font-size: 3rem;
   font-weight: 900;
 }
@@ -113,7 +116,18 @@ main section{
   flex-direction: column;
   align-items: center;
 }
-
+.box-text-main{
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.box-text-main p{
+  font-size: 1.5vw;
+  font-weight: 400;
+}
 .box-card{
   display: flex;
   flex-wrap: wrap;
