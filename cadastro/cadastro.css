@@ -1,0 +1,73 @@
+@import '../header-footer/header-footer.css';
+
+:root {
+  --verde: #1af38c;
+  --branco: #eeeeee;
+  --azul: #32dde0;
+  --cinza: #393e46;
+  --cinza-escuro: #222831;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.background-top {
+  width: 100%;
+  height: 15vh;
+  background-color: var(--cinza);
+}
+
+.background-wave {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/wave.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.background-wave div {
+  display: flex;
+  align-items: end;
+  width: 45%;
+  height: 56%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control:focus {
+  border-color: var(--azul);
+  box-shadow: rgb(50 221 224 / 25%) 0px 0px 0px 0.25rem;
+}
+
+form .btn {
+  align-self: center;
+}
+
+form label {
+  color: #26a0a2;
+}
+
+.btn.submit {
+  border: 2px solid var(--azul);
+  background-color: var(--azul);
+  color: var(--branco);
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.btn.submit:hover,
+.btn.submit:active {
+  background-color: transparent;
+}
