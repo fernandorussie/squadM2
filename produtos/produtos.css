@@ -75,7 +75,7 @@ header{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999px;
+  z-index: 999;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
 main{
@@ -111,22 +111,44 @@ main{
   font-weight: 900;
 }
 main section{
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.box-content-main{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.box-content-main:nth-child(2){
+  position: relative;
+}
+
 .box-text-main{
   width: 50%;
-  height: 50vh;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
 }
 .box-text-main p{
-  font-size: 1.5vw;
+  font-size: 24px;
   font-weight: 400;
+}
+.box-imagem{
+  width: 400px;
+}
+.image-product{
+  width: 400px;
+}
+.image-product2{
+  width: 400px;
+  position: absolute;
+  bottom: 0%;
+  left: 13%;
+  z-index: 1;
 }
 .box-card{
   display: flex;
