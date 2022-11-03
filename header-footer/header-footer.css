@@ -1,34 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* border: red 1px solid ; */
 }
-
 :root {
+  --azul-mais-escuro:#393E46;
+  --azul-escuro: #393E46;
+  --ciano: #32DDE0;
+  --azul-preto: #222831;
   --verde: #1af38c;
-  --branco: #eeeeee;
-  --azul: #32dde0;
-  --cinza: #393e46;
-  --cinza-escuro: #222831;
+}
+colors{
+  color: #1af38c;
+  color: #EEEEEE;
+  color: #32DDE0;
+  color: #393E46;
+  color: #222831;
 }
 
 .navbar,
 .dropdown-menu,
 .container.p-4.pb-0,
 #footer {
-  background-color: var(--cinza) !important;
+  background-color: var(--azul-escuro) !important;
 }
 
-.navbar {
-  background: rgba(57, 62, 70, 0.9) !important;
-  box-shadow: 0 8px 32px 0 rgba(57, 62, 70, 0.37);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+.navbar{
+  background: rgba(57, 62, 70, 0.9 ) !important;
+  box-shadow: 0 8px 32px 0 rgba(57, 62, 70 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
 }
-
 .nav-link.active,
 .nav-link:focus {
   color: var(--verde) !important;
@@ -37,40 +41,37 @@
 .navbar a {
   color: azure;
 }
-
-.navbar-box-logo {
+.navbar-box-logo{
   width: 19.5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.navbar-brand {
-  font-family: 'Fredoka One';
+.navbar-brand{
+  font-family: 'Montserrat';
   font-style: normal;
   line-height: 130%;
-  font-weight: 400;
+  font-weight: 900;
   font-size: 2vw;
+  margin-left: 16px;
   color: white;
 }
-
-.navbar-logo {
+.navbar-logo{
   width: 125px;
   height: 65px;
-  background-image: url('../assets/CClogo.png');
+  background-image: url("../assets/CClogo.png");
   background-position: center;
   background-size: cover;
 }
-
 .navbar a:hover {
   color: var(--verde);
 }
 
 .dropdown-item:active {
-  background-color: var(--cinza-escuro);
+  background-color: var(--azul-mais-escuro);
 }
 
-header {
+header{
   width: 100%;
   position: fixed;
   top: 0;
@@ -78,8 +79,7 @@ header {
   z-index: 999;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
-
-main {
-  background-color: var(--cinza-escuro);
-  color: #eeeeee;
+main{
+  background-color: #222831;
+  color: #EEEEEE;
 }

@@ -1,87 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-@import './header-footer/registro.css';
+@import './header-footer/header-footer.css';
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* border: red 1px solid ; */
-}
-:root {
-  --azul-mais-escuro:#393E46;
-  --azul-escuro: #393E46;
-  --ciano: #32DDE0;
-  --azul-claro: #222831;
-  --azul-mais-claro: #1af38c;
-}
-colors{
-  color: #1af38c;
-  color: #EEEEEE;
-  color: #32DDE0;
-  color: #393E46;
-  color: #222831;
-}
-
-.navbar,
-.dropdown-menu,
-.container.p-4.pb-0,
-#footer {
-  background-color: var(--azul-escuro) !important;
-}
-
-.navbar{
-  background: rgba(57, 62, 70, 0.9 ) !important;
-  box-shadow: 0 8px 32px 0 rgba(57, 62, 70 0.37 );
-  backdrop-filter: blur( 3px );
-  -webkit-backdrop-filter: blur( 3px );
-}
-.nav-link.active,
-.nav-link:focus {
-  color: var(--azul-mais-claro) !important;
-}
-
-.navbar a {
-  color: azure;
-}
-.navbar-box-logo{
-  width: 19.5%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.navbar-brand{
-  font-family: 'Fredoka One';
-  font-style: normal;
-  line-height: 130%;
-  font-weight: 400;
-  font-size: 2vw;
-  color: white;
-}
-.navbar-logo{
-  width: 125px;
-  height: 65px;
-  background-image: url("../assets/CClogo.png");
-  background-position: center;
-  background-size: cover;
-}
-.navbar a:hover {
-  color: var(--azul-mais-claro);
-}
-
-.dropdown-item:active {
-  background-color: var(--azul-mais-escuro);
-}
-
-header{
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999px;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-}
-main{
-  background-color: #222831;
-  color: #EEEEEE;
 }
 .background-top{
   width: 100%;
@@ -94,7 +16,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../assets/wave.svg");
+  background-image: url("./assets/wave3.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,71 +32,4 @@ main{
   text-align: center;
   font-size: 3rem;
   font-weight: 900;
-}
-main section{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.box-text-main{
-  width: 50%;
-  height: 50vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
-.box-text-main p{
-  font-size: 1.5vw;
-  font-weight: 400;
-}
-.box-card{
-  display: flex;
-  flex-wrap: wrap;
-}
-.card-service{
-  width: 250px;
-  height: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 20px;
-  margin: 20px;
-  border: #32DDE0 solid 1px;
-  border-radius: 10px;
-}
-.card-service-logo{
-  width: 100px;
-}
-.title-card-service{
-  font-size: 2vw;
-  font-weight: 900;
-  font-style: normal;
-  line-height: 130%;
-  text-align: center;
-}
-.price-card-service{
-  font-size: 1.4vw;
-}
-
-
-.btn-card-service  {
-  min-width: 130px;
-  height: 40px;
-  color: #fff;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  border: 2px solid #32DDE0;
-  background: #32DDE0;
-}
-.btn-card-service:hover {
-  background: transparent;
 }
