@@ -3,7 +3,6 @@
 :root {
   --verde: #1af38c;
   --branco: #eeeeee;
-  --azul: #32dde0;
   --cinza: #393e46;
   --cinza-escuro: #222831;
 }
@@ -35,8 +34,13 @@ main {
 }
 
 .titulo {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
+  text-decoration: underline var(--verde);
+}
+
+.color {
+  color: var(--verde);
 }
 
 form {
@@ -45,8 +49,8 @@ form {
 }
 
 .form-control:focus {
-  border-color: var(--azul);
-  box-shadow: rgb(50 221 224 / 25%) 0px 0px 0px 0.25rem;
+  border-color: var(--verde);
+  box-shadow: rgb(26 243 140 / 25%) 0px 0px 0px 0.25rem;
 }
 
 form .btn {
@@ -54,12 +58,21 @@ form .btn {
 }
 
 form label {
-  color: #26a0a2;
+  color: var(--cinza);
+}
+
+form label:last-child {
+  color: #18c071
+}
+
+.form-check-input:checked {
+  background-color: #18c071;
+  border-color: #18c071;
 }
 
 .btn.submit {
-  border: 2px solid var(--azul);
-  background-color: var(--azul);
+  border: 2px solid var(--verde);
+  background-color: var(--verde);
   color: var(--branco);
   font-weight: bold;
   margin-bottom: 2rem;
