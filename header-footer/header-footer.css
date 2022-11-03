@@ -26,7 +26,6 @@ colors{
 #footer {
   background-color: var(--azul-escuro) !important;
 }
-
 .navbar{
   background: rgba(57, 62, 70, 0.9 ) !important;
   box-shadow: 0 8px 32px 0 rgba(57, 62, 70 0.37 );
@@ -37,7 +36,6 @@ colors{
 .nav-link:focus {
   color: var(--verde) !important;
 }
-
 .navbar a {
   color: azure;
 }
@@ -47,21 +45,20 @@ colors{
   align-items: center;
   justify-content: space-between;
 }
-.navbar-brand{
-  font-family: 'Montserrat';
-  font-style: normal;
-  line-height: 130%;
-  font-weight: 900;
-  font-size: 2vw;
-  margin-left: 16px;
-  color: white;
-}
 .navbar-logo{
   width: 125px;
   height: 65px;
   background-image: url("../assets/CClogo.png");
   background-position: center;
   background-size: cover;
+}
+.navbar-brand{
+  font-family: 'Montserrat';
+  font-style: normal;
+  line-height: 130%;
+  font-weight: 900;
+  font-size: 28px;
+  margin-left: 16px;
 }
 .navbar a:hover {
   color: var(--verde);

@@ -42,16 +42,8 @@
   justify-content: center;
   margin: 20px 0;
 }
-/* .box-content-main:nth-child(2){
-  position: relative;
-} */
-
 .box-text-main{
   width: 60%;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column; */
 }
 .box-text-main p{
   font-size: 24px;
@@ -107,10 +99,6 @@ ol li::before{
 }
 .image-product2{
   width: 25vw;
-  /* position: absolute;
-  bottom: 0%;
-  left: 13%;
-  z-index: 1; */
 }
 .video{
   width: 40vw;
@@ -172,8 +160,6 @@ ol li::before{
 .price-card-service{
   font-size: 21px;
 }
-
-
 .btn-card-service  {
   min-width: 130px;
   height: 40px;
