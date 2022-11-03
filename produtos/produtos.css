@@ -201,7 +201,6 @@ ol li::before{
 }
 
 .box-bottom-main{
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -212,7 +211,7 @@ ol li::before{
 .box-bottom-main .box-title{
   display: flex;
   align-items: end;
-  width: 45%;
+  width: 600px;
 }
 .title-bottom-main {
   text-align: center;
@@ -221,7 +220,9 @@ ol li::before{
   text-decoration: underline #1af38c;
 }
 .box-card{
+  width: 100%;
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .card-service{
@@ -274,6 +275,9 @@ ol li::before{
 }
 .btn-card-service:hover {
   background: transparent;
+}
+.box-text-bottom{
+  width: 60%;
 }
 .text-uppercase{
   text-transform: uppercase;
