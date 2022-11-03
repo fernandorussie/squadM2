@@ -1,31 +1,17 @@
-/* url: viacep.com.br/ws/'cep'/json/ */
+const inputCEP = document.querySelector('#floatingCep');
+let dados;
 
-/* class CEP {
-    constructor(cep) {
-        this.cep = cep
-    }
-    get info() {
-        return this.requisicao()
-    }
-    requisicao() {
-        const url = `viacep.com.br/ws/${this.cep}/json/`
-        const req = fetch(url)
-        .then(response => {
-            response.json()
-            console.log(response);
-        })
-    }
+async function getInfo({ target }) {
+  const cep = target.value;
+  const url = `https://viacep.com.br/ws/${cep}/json/`;
+  const response = await fetch(url);
+  dados = await response.json();
+  console.log(dados);
 }
 
-let cep = new CEP(21520001)
-cep.info */
-
-const inputCEP = document.querySelector()
-
-async function getInfo({target}) {
-    const cep = target.value
-    const url = `viacep.com.br/ws/${cep}/json/`
-    const req = await fetch(url)
-    console.log(cep, url, req);
+function setInfo() {
+  getInfo();
+  // criar
 }
 
+inputCEP.addEventListener('change', getInfo);
