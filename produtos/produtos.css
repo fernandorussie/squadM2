@@ -269,8 +269,8 @@ ol li::before{
   display: inline-block;
   outline: none;
   border-radius: 5px;
-  border: 2px solid #32DDE0;
-  background: #32DDE0;
+  border: 2px solid #1af38c;
+  background: #1af38c;
 }
 .btn-card-service:hover {
   background: transparent;
@@ -278,8 +278,8 @@ ol li::before{
 .text-uppercase{
   text-transform: uppercase;
   font-weight: 900;
-  color: #32DDE0;
+  color: #1af38c;
 }
 .underline{
-  text-decoration: underline #32DDE0;
+  text-decoration: underline #1af38c;
 }
