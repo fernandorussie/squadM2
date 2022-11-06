@@ -38,7 +38,7 @@
 .box-top-main{
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   margin: 20px 0;
 }
@@ -195,11 +195,12 @@ ol li::before{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
-}
-.box-text-bottom p{
   font-size: 24px;
   font-weight: 600;
+  margin: 20px;
+}
+.text-support{
+  font-weight: 400;
 }
 .text-uppercase{
   text-transform: uppercase;

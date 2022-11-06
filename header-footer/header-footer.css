@@ -60,6 +60,14 @@ colors{
   font-size: 28px;
   margin-left: 16px;
 }
+.title-logo{
+  font-family: 'Montserrat';
+  font-style: normal;
+  line-height: 130%;
+  font-weight: 900;
+  font-size: 28px;
+  margin-left: 16px;
+}
 .navbar a:hover {
   color: var(--verde);
 }
