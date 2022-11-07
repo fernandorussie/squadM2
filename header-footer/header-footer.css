@@ -40,17 +40,16 @@ colors{
   color: azure;
 }
 .navbar-box-logo{
-  width: 19.5%;
+  /* width: 19.5%; */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .navbar-logo{
-  width: 125px;
-  height: 65px;
-  background-image: url("../assets/CClogo.png");
+  width: 80px;
+  /* background-image: url("../assets/CClogo.png");
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 .navbar-brand{
   font-family: 'Montserrat';
