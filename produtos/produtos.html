@@ -21,6 +21,11 @@
   </head>
   <body>
     <header>
+      <div>
+        <a href="#">
+          <img class="btn-back-top" src="../assets/icons/seta.svg" alt="" srcset="">
+        </a>
+      </div>
       <nav class="navbar navbar-expand-lg bg-blue">
         <div class="container-fluid">
           
@@ -131,57 +136,51 @@
           </div>
           <div class="box-card">
 
-            <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-              <div class="modal-dialog-centered" role="document">
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="TituloModalCentralizado">Nova mensagem</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <h5 class="modal-title" id="exampleModalLabel">Um pouco mais sobre o <span class="underline">Apoiador Junior</span></h5>
+                    <button type="button" class="close close-color" data-dismiss="modal" aria-label="Fechar">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <!-- <div class="modal-body">
-                    <form>
-                      <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Destinatário:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                      </div>
-                      <div class="form-group">
-                        <label for="message-text" class="col-form-label">Mensagem:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                      </div>
-                    </form>
-                  </div> -->
+                  <div class="modal-body">
+                    <p>
+                      A opção para apoiadores funciona da seguinte maneira: Se você deseja usar o app e ainda assim quer apoiar o projeto, você pode se tornar um apoiador mensal, ajudando mensalidade com um valor simbolico e você ganha alguns privilégios dentro do app.*
+                    </p>
+                  </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn-card-service" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn-card-service" data-dismiss="modal">Adquirir</button>
                   </div>
                 </div>
               </div>
             </div>
-
+            
             <div class="card-service">
               <img class="card-service-logo" src="../assets/CClogo.png" alt="">
               <h3 class="title-card-service">Apoiador <span class="underline">Junior</span></h3>
               <p class="price-card-service"><span class="text-uppercase">gratuito</span></p>
-              <button class="btn-card-service" data-toggle="modal" data-target="#ExemploModalCentralizado" data-whatever="@getbootstrap">Saiba mais!</button>
+              <button class="btn-card-service" data-toggle="modal" data-target="#exampleModal" data-whatever="Apoiador Junior">Saiba mais!</button>
             </div>
             <div class="card-service">
               <img class="card-service-logo" src="../assets/CClogo.png" alt="">
               <h3 class="title-card-service">Apoiador <span class="underline">Pleno</span></h3>
               <p class="price-card-service">Valor: <span class="text-uppercase">R$ 20,00</span></p>
-              <button class="btn-card-service" id="2">Saiba mais!</button>
+              <button class="btn-card-service" data-toggle="modal" data-target="#exampleModal" data-whatever="Apoiador Pleno">Saiba mais!</button>
             </div>
             <div class="card-service">
               <img class="card-service-logo" src="../assets/CClogo.png" alt="">
               <h3 class="title-card-service">Apoiador <span class="underline">Senior</span></h3>
               <p class="price-card-service">Valor: <span class="text-uppercase">R$ 30,00</span></p>
-              <button class="btn-card-service" id="3">Saiba mais!</button>
+              <button class="btn-card-service" data-toggle="modal" data-target="#exampleModal" data-whatever="Apoiador Senior">Saiba mais!</button>
             </div>
             <div class="card-service">
               <img class="card-service-logo" src="../assets/CClogo.png" alt="">
               <h3 class="title-card-service">Apoiador <span class="underline">Full Stack</span></h3>
               <p class="price-card-service"><span class="text-uppercase">Patrocinador</span></p>
-              <button class="btn-card-service" id="4">Saiba mais!</button>
+              <button class="btn-card-service" data-toggle="modal" data-target="#exampleModal" data-whatever="Apoiador Full Stack">Saiba mais!</button>
             </div>
           </div>
           <div class="box-text-bottom">
@@ -226,6 +225,7 @@
     </main>
 
     <footer class="bg-dark text-center text-white" id="footer">
+
       <div class="container p-4 pb-0">
         <section class="mb-4">
           <a

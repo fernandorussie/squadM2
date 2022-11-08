@@ -87,3 +87,21 @@ main{
   background-color: #222831;
   color: #EEEEEE;
 }
+
+.btn-outline-light {
+  --bs-btn-color: #fff;
+  --bs-btn-border-color: #1af38c;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #1af38c;
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-focus-color: #fff;
+  --bs-btn-focus-bg: #1af38c;
+  --bs-btn-focus-border-color: #1af38c;
+}
+.btn-back-top{
+  width: 80px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 999;
+}

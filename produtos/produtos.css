@@ -124,13 +124,35 @@ ol li::before{
   text-decoration: underline #1af38c;
 }
 .box-card{
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+.modal, .fade{
+  color: white;
+}
+.modal-content{
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgb(50 221 224 / 37%);
+  backdrop-filter: blur( 9.5px );
+  -webkit-backdrop-filter: blur( 1.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.modal-body{
+  padding: 20px;
+  font-weight: 700;
+}
+.close-color{
+  color: #1af38c;
+  opacity: 1;
+}
+.close:hover{
+  color: white;
+}
 .card-service{
-  width: 300px;
+  width: 280px;
   height: 380px;
   display: flex;
   align-items: center;
