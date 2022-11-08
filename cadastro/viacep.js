@@ -4,6 +4,8 @@ const inputCidade = document.querySelector('#floatingCidade');
 const inputBairro = document.querySelector('#floatingBairro');
 const inputRua = document.querySelector('#floatingRua');
 const inputComplemento = document.querySelector('#floatingComplemento');
+const inputRadio = document.querySelector('#exampleCheck1');
+const btn = document.querySelector('.submit');
 let dados;
 
 // FUNÇÃO PARA FAZER A REQUISIÇÃO DOS DADOS ATRAVÉS DA API VIACEP
@@ -26,3 +28,17 @@ async function setInfo() {
 }
 
 inputCEP.addEventListener('change', setInfo);
+
+// FUNÇÃO PARA VERIFICAR SE INPUT RADIO FOI CHECADO ANTES DE ENVIAR O FORMULÁRIO
+function submitForm(event) {
+  event.preventDefault();
+  if (inputRadio.checked) {
+    alert('Cadastro realizado com sucesso.');
+  } else {
+    alert(
+      'Você precisa confirmar a veracidade dos dados fornecidos antes de finalizar o cadstro.'
+    );
+  }
+}
+
+btn.addEventListener('click', submitForm);
