@@ -5,17 +5,6 @@
   box-sizing: border-box;
   /* border: red 1px solid ; */
 }
-.navbar-brand{
-  font-size: var(--bs-navbar-brand-font-size);
-}
-.title-logo{
-  font-family: 'Montserrat';
-  font-style: normal;
-  line-height: 130%;
-  font-weight: 900;
-  font-size: 28px;
-  margin-left: 16px;
-}
 main{
   min-height: 84vh;
 }

@@ -1,5 +1,7 @@
 @import '../header-footer/header-footer.css';
-
+*{
+  /* border: 1px solid red; */
+}
 :root {
   --verde: #1af38c;
   --branco: #eeeeee;
@@ -50,9 +52,25 @@ main section{
     justify-content: space-around;
     margin-bottom: 50px;
 }
+.container-card-squad{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.box-card-squad{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
 .containercard {
     width: 300px;
     height: 450px;
+    margin: 20px;
     border-radius: 12px;
     box-shadow: 6px 6px 10px var(--cinza), 6px 6px 20px var(--verde);
 }
@@ -96,4 +114,9 @@ main section{
 .lower p {
     font-size: 14px;
     font-weight: 400;
+}
+@media (max-width: 576px) { 
+  .box-card-squad {
+    width: 100%;
+  }
 }

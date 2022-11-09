@@ -6,16 +6,13 @@
   /* border: red 1px solid ; */
 }
 :root {
-  --azul-mais-escuro:#393E46;
   --azul-escuro: #393E46;
-  --ciano: #32DDE0;
   --azul-preto: #222831;
   --verde: #1af38c;
 }
 colors{
   color: #1af38c;
   color: #EEEEEE;
-  color: #32DDE0;
   color: #393E46;
   color: #222831;
 }
@@ -56,7 +53,7 @@ colors{
   font-style: normal;
   line-height: 130%;
   font-weight: 900;
-  font-size: 28px;
+  font-size: 28px!important;
   margin-left: 16px;
 }
 .title-logo{
@@ -74,7 +71,11 @@ colors{
 .dropdown-item:active {
   background-color: var(--azul-mais-escuro);
 }
-
+.background-top{
+  width: 100%;
+  height: 25vh;
+  background-color: #393E46;
+}
 header{
   width: 100%;
   position: fixed;
@@ -89,14 +90,14 @@ main{
 }
 
 .btn-outline-light {
-  --bs-btn-color: #fff;
-  --bs-btn-border-color: #1af38c;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #1af38c;
-  --bs-btn-hover-border-color: #fff;
-  --bs-btn-focus-color: #fff;
-  --bs-btn-focus-bg: #1af38c;
-  --bs-btn-focus-border-color: #1af38c;
+  --bs-btn-color: #fff!important;
+  --bs-btn-border-color: #1af38c!important;
+  --bs-btn-hover-color: #fff!important;
+  --bs-btn-hover-bg: #1af38c!important;
+  --bs-btn-hover-border-color: #fff!important;
+  --bs-btn-focus-color: #fff!important;
+  --bs-btn-focus-bg: #1af38c!important;
+  --bs-btn-focus-border-color: #1af38c!important;
 }
 .btn-back-top{
   width: 80px;
@@ -104,4 +105,23 @@ main{
   bottom: 20px;
   right: 30px;
   z-index: 999;
+}
+.title-section{
+  font-size: 4rem;
+  font-weight: 900;
+  text-decoration: underline #1af38c;
+}
+.box-title-principal {
+  width: 50%!important;
+}
+@media (max-width: 576px) { 
+  .box-title-principal {
+    display: inline-block!important;
+    width: auto!important;
+    height: auto!important;
+    padding: 1rem!important;
+  }
+  .title-section {
+    font-size: 3rem;
+  }
 }
