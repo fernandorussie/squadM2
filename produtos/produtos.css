@@ -1,6 +1,11 @@
 @import '../header-footer/header-footer.css';
 
-
+:root {
+  --verde: #1af38c;
+  --branco: #eeeeee;
+  --cinza: #393e46;
+  --cinza-escuro: #222831;
+}
 main {
   display: flex;
   flex-direction: column;
@@ -9,7 +14,7 @@ main {
 .background-top{
   width: 100%;
   height: 15vh;
-  background-color: #393E46;
+  background-color: var(--cinza);
 }
 .background-wave{
   width: 100%;
@@ -60,7 +65,7 @@ ol {
 }   
 ol li::before{
   content: '</>';
-  color: #1af38c;
+  color: var(--verde);
   display: inline-block;
   width: 2.4em;
 }
@@ -68,7 +73,7 @@ ol li::before{
   font-size: 28px;
   font-weight: 900;
   text-transform: uppercase;
-  color: #1af38c;
+  color: var(--verde);
 }
 .box-mid-main{
   display: flex;
@@ -121,7 +126,7 @@ ol li::before{
   text-align: center;
   font-size: 4rem;
   font-weight: 900;
-  text-decoration: underline #1af38c;
+  text-decoration: underline var(--verde);
   margin-bottom: 40px;
 }
 .box-card{
@@ -131,7 +136,7 @@ ol li::before{
   flex-wrap: wrap;
 }
 .modal, .fade{
-  color: white;
+  color: var(--branco);
 }
 .modal-content{
   background: rgba( 255, 255, 255, 0.35 );
@@ -149,7 +154,7 @@ ol li::before{
   font-weight: 700;
 }
 .close-color{
-  color: #1af38c;
+  color: var(--verde);
   opacity: 1;
 }
 .close:hover{

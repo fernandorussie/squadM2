@@ -16,3 +16,13 @@ $('#exampleModal').on('show.bs.modal', function (event) {
         modal.find('.modal-body p').text(`Com o plano ${recipient} você vai investir no projeto e a partir disso, sera um patrocinador.`)
     }
   })
+
+  function darkMode(){
+    var checkBox = document.querySelector('#checkbox');
+    
+    if (checkBox.checked == true){
+        document.documentElement.style.setProperty('--verde', 'red')
+      } else {
+        document.documentElement.style.setProperty('--verde', 'blue')
+      }
+    }
