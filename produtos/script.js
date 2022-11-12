@@ -17,12 +17,19 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     }
   })
 
-  function darkMode(){
-    var checkBox = document.querySelector('#checkbox');
-    
-    if (checkBox.checked == true){
-        document.documentElement.style.setProperty('--verde', 'red')
-      } else {
-        document.documentElement.style.setProperty('--verde', 'blue')
-      }
-    }
+
+  // Função Dark/Ligth Mode
+  // function darkMode(){
+  //   var checkBox = document.querySelector('#checkbox');
+  //   var video = document.querySelector('#video');
+  //   var image = document.querySelector('#image');
+  //   if (checkBox.checked == true){
+  //       document.documentElement.style.setProperty('--cinza-escuro', '#000'),
+  //       video.setAttribute ('src', '../assets/cellcode-Iphone/video-cell-modelo-black.mp4');
+  //       image.setAttribute ('src', '../assets/cellcode-Iphone/tablet.png');
+  //     } else {
+  //       document.documentElement.style.setProperty('--cinza-escuro', '#222831'),
+  //       video.setAttribute ('src','../assets/cellcode-Iphone/videoCellCode.mp4'),
+  //       image.setAttribute ('src', '../assets/cellcode-Iphone/img2.png');
+  //     }
+  //   }

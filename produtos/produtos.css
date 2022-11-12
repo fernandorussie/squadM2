@@ -1,11 +1,6 @@
 @import '../header-footer/header-footer.css';
 
-:root {
-  --verde: #1af38c;
-  --branco: #eeeeee;
-  --cinza: #393e46;
-  --cinza-escuro: #222831;
-}
+
 main {
   display: flex;
   flex-direction: column;
@@ -26,7 +21,11 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: center; 
+  background-position-x: center;
+}
+.background-wave:hover{
+
+  /* filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); */
 }
 .background-wave div{
   display: flex;
@@ -158,7 +157,7 @@ ol li::before{
   opacity: 1;
 }
 .close:hover{
-  color: white;
+  color: var(--branco);
 }
 .card-service{
   width: 280px;
@@ -194,7 +193,7 @@ ol li::before{
 .btn-card-service  {
   min-width: 130px;
   height: 40px;
-  color: #fff;
+  color: var(--branco);
   padding: 5px 10px;
   font-weight: bold;
   cursor: pointer;
@@ -203,13 +202,13 @@ ol li::before{
   display: inline-block;
   outline: none;
   border-radius: 5px;
-  border: 2px solid #1af38c;
-  background: #1af38c;
+  border: 2px solid var(--verde);
+  background: var(--verde);
 }
 .btn-card-close  {
   min-width: 130px;
   height: 40px;
-  color: #1af38c;
+  color: var(--verde);
   padding: 5px 10px;
   font-weight: bold;
   cursor: pointer;
@@ -218,8 +217,8 @@ ol li::before{
   display: inline-block;
   outline: none;
   border-radius: 5px;
-  border: 2px solid white;
-  background: white;
+  border: 2px solid var(--branco);
+  background: var(--branco);
 }
 .btn-card-close:hover{
   background: transparent;
@@ -254,10 +253,10 @@ ol li::before{
 .text-uppercase{
   text-transform: uppercase;
   font-weight: 900;
-  color: #1af38c;
+  color: var(--verde);
 }
 .underline{
-  text-decoration: underline #1af38c;
+  text-decoration: underline var(--verde);
 }
 
 /* responsivo */
