@@ -129,7 +129,7 @@ ol li::before{
   width: 25vw;
 }
 .video{
-  width: 40vw;
+  width: 30vw;
 }
 .box-bottom-main{
   display: flex;
@@ -258,11 +258,7 @@ ol li::before{
   align-items: center;
   margin-top: 40px;
 }
-.icon-text{
-  width: 80px;
-  margin-right: 20px;
-}
-.box-text-bottom div{
+.box-row-text-icon{
   width: 100%;
   display: flex;
   justify-content: center;
@@ -270,6 +266,15 @@ ol li::before{
   font-size: 24px;
   font-weight: 600;
   margin: 20px;
+}
+.icon-text{
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  stroke: var(--branco);
+}
+.icon-text svg{
+  width: 80px;
 }
 .text-support{
   font-weight: 400;
