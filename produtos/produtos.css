@@ -11,7 +11,31 @@ main {
   height: 15vh;
   background-color: var(--cinza);
 }
-.background-wave{
+.wave {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.wave svg{
+  fill: var(--cinza);
+}
+.background-wave {
+  width: 100%;
+  /* height: 40vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url('../assets/wave2.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center; */
+}
+/* .background-wave{
   width: 100%;
   height: 40vh;
   display: flex;
@@ -22,7 +46,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-}
+} */
 .background-wave:hover{
 
   /* filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); */
@@ -169,7 +193,7 @@ ol li::before{
   padding: 10px;
   margin: 20px;
   background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 50, 221, 224, 0.37 );
+  box-shadow: 0 8px 32px 0 var(--border-card);
   backdrop-filter: blur( 1.5px );
   -webkit-backdrop-filter: blur( 1.5px );
   border-radius: 10px;

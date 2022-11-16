@@ -19,17 +19,27 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 
 
   // Função Dark/Ligth Mode
-  // function darkMode(){
-  //   var checkBox = document.querySelector('#checkbox');
-  //   var video = document.querySelector('#video');
-  //   var image = document.querySelector('#image');
-  //   if (checkBox.checked == true){
-  //       document.documentElement.style.setProperty('--cinza-escuro', '#000'),
-  //       video.setAttribute ('src', '../assets/cellcode-Iphone/video-cell-modelo-black.mp4');
-  //       image.setAttribute ('src', '../assets/cellcode-Iphone/tablet.png');
-  //     } else {
-  //       document.documentElement.style.setProperty('--cinza-escuro', '#222831'),
-  //       video.setAttribute ('src','../assets/cellcode-Iphone/videoCellCode.mp4'),
-  //       image.setAttribute ('src', '../assets/cellcode-Iphone/img2.png');
-  //     }
-  //   }
+  function darkMode(){
+    var checkBox = document.querySelector('#checkbox');
+    var video = document.querySelector('#video');
+    var image = document.querySelector('#image');
+    if (checkBox.checked == true){
+        document.documentElement.style.setProperty('--bg-cinza', 'rgba(152,24,245, 0.9)'),
+        document.documentElement.style.setProperty('--cinza', '#9818F5'),
+        document.documentElement.style.setProperty('--cinza-escuro', '#C7C8CA'),
+        document.documentElement.style.setProperty('--branco', '#000'),
+        document.documentElement.style.setProperty('--border-card', 'rgba(152,24,245, 0.37)'),
+        document.documentElement.style.setProperty('--verde', '#BD62FF'),
+        video.setAttribute ('src', '../assets/cellcode-Iphone/video-cell-modelo-black.mp4');
+        image.setAttribute ('src', '../assets/cellcode-Iphone/tablet.png');
+      } else {
+        document.documentElement.style.setProperty('--bg-cinza', 'rgba(57, 62, 70, 0.9)'),
+        document.documentElement.style.setProperty('--cinza-escuro', '#222831'),
+        document.documentElement.style.setProperty('--cinza', '#393e46'),
+        document.documentElement.style.setProperty('--branco', '#fff'),
+        document.documentElement.style.setProperty('--border-card', 'rgba( 50, 221, 224, 0.37)'),
+        document.documentElement.style.setProperty('--verde', '#1af38c'),
+        video.setAttribute ('src','../assets/cellcode-Iphone/videoCellCode.mp4'),
+        image.setAttribute ('src', '../assets/cellcode-Iphone/img2.png');
+      }
+    }
