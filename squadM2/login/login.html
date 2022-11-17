@@ -1,0 +1,260 @@
+
+<!--------------------------- https://colorlib.com/etc/lf/Login_v10/index.html ---------------------------------->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.png" />
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="./header-footer/header-footer.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+      
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+      
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+      
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+      
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+      
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+      
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+      
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+      
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <meta name="robots" content="noindex, follow">
+  <script nonce="34445580-61bb-4001-824c-9eb0411083af">(function(w,d){!function(Z,_,ba,bb){Z.zarazData=Z.zarazData||{};Z.zarazData.executed=[];Z.zaraz={deferred:[],listeners:[]};Z.zaraz.q=[];Z.zaraz._f=function(bc){return function(){var bd=Array.prototype.slice.call(arguments);Z.zaraz.q.push({m:bc,a:bd})}};for(const be of["track","set","debug"])Z.zaraz[be]=Z.zaraz._f(be);Z.zaraz.init=()=>{var bf=_.getElementsByTagName(bb)[0],bg=_.createElement(bb),bh=_.getElementsByTagName("title")[0];bh&&(Z.zarazData.t=_.getElementsByTagName("title")[0].text);Z.zarazData.x=Math.random();Z.zarazData.w=Z.screen.width;Z.zarazData.h=Z.screen.height;Z.zarazData.j=Z.innerHeight;Z.zarazData.e=Z.innerWidth;Z.zarazData.l=Z.location.href;Z.zarazData.r=_.referrer;Z.zarazData.k=Z.screen.colorDepth;Z.zarazData.n=_.characterSet;Z.zarazData.o=(new Date).getTimezoneOffset();Z.zarazData.q=[];for(;Z.zaraz.q.length;){const bl=Z.zaraz.q.shift();Z.zarazData.q.push(bl)}bg.defer=!0;for(const bm of[localStorage,sessionStorage])Object.keys(bm||{}).filter((bo=>bo.startsWith("_zaraz_"))).forEach((bn=>{try{Z.zarazData["z_"+bn.slice(7)]=JSON.parse(bm.getItem(bn))}catch{Z.zarazData["z_"+bn.slice(7)]=bm.getItem(bn)}}));bg.referrerPolicy="origin";bg.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(Z.zarazData)));bf.parentNode.insertBefore(bg,bf)};["complete","interactive"].includes(_.readyState)?zaraz.init():Z.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,0,"script");})(window,document);</script>
+      <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-blue">
+          <div class="container-fluid">
+            
+              <div class="navbar-box-logo">
+                <img class="navbar-logo" src="../assets/CClogo.png" alt="">
+                <a class="navbar-brand title-logo" href="../index.html">CellCode</a>
+              </div>
+            
+            <div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="../produtos/produtos.html">Conheça nosso app</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../cadastro/cadastro.html">Cadastre-se</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Área do apoiador
+                    </a>
+                    <ul class="dropdown-menu" style="left: unset;
+                    right: 0%;">
+                      <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                      
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+<main>
+  <div class="background-wave"><br><br><br><br><br><br>
+        <div>
+          <h1 class="title-background-wave">Realize o Login para ter acesso a Área do apoiador</h1>
+        </div>
+      </div>
+
+<style>
+    .background-wave {
+      width: 100%;
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url('../assets/wave3.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: center;
+    }
+    .background-wave div{
+      display: flex;
+      align-items: end;
+      width: 50%;
+    }
+    .title-background-wave{
+      text-align: center;
+      font-size: 4rem;
+      font-weight: 900;
+      text-decoration: underline #1af38c;
+    }
+
+</style>
+
+  <div class="limiter">
+  <div class="container-login100">
+  
+  <form class="login100-form validate-form flexb-sb flex-w">
+  <span class="login100-form-title p-b-51">
+ 
+  </span>
+  <div class="wrap-input100 validate-input m-b-16" data-validate="Usuário obrigatório*">
+  <input class="input100" type="text" name="username" placeholder="Usuário" >
+  <span class="focus-input100"></span>
+  </div>
+  <div class="wrap-input100 validate-input" data-validate="Senha obrigatória*">
+  <input class="input100" type="password" name="pass" placeholder="Senha" >
+  <span class="focus-input100"></span>
+  </div>
+  <div class="flex-sb-m w-full p-t-3 p-b-24">
+  <div class="contact100-form-checkbox">
+  <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+  <a href="../cadastro/cadastro.html" class="txt1">
+  Cadastre-se
+  </a>
+  </div>
+  <div>
+  <a href="../recuperar/recuperar.html" class="txt1">
+  Esqueceu a senha?
+  </a>
+  </div>
+  </div>
+  <div class="container-login100-form-btn m-t-17">
+  <button class="login100-form-btn" href="../index.html">
+  Login
+  </button>
+  </div>
+  </form>
+  </div>
+  </div>
+  </div>
+
+  <div id="dropDownSelect1"></div>
+  
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  
+  <script src="vendor/animsition/js/animsition.min.js"></script>
+  
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  
+  <script src="vendor/select2/select2.min.js"></script>
+  
+  <script src="vendor/daterangepicker/moment.min.js"></script>
+  <script src="vendor/daterangepicker/daterangepicker.js"></script>
+  
+  <script src="vendor/countdowntime/countdowntime.js"></script>
+  
+  <script src="js/main.js"></script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7677d9f55fc31178","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.0","si":100}' crossorigin="anonymous"></script>
+
+  </main>
+
+ <footer class="bg-dark text-center text-white" id="footer">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Alguns direitos reservados.
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/4175a75404.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </footer>
+
+</body>
+</html>
