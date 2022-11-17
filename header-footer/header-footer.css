@@ -15,8 +15,7 @@
   --bg-cinza: rgba(57, 62, 70, 0.9);
   --bg-roxo: rgba(152,24,245, 0.9);
   --border-card:  rgba( 50, 221, 224, 0.37);
-
-  --img-logo: url('../../assets/CClogo.png')
+  --texto: #fff;
 }
 
 .navbar,
@@ -36,7 +35,7 @@
   color: var(--verde) !important;
 }
 .navbar a {
-  color: var(--branco);
+  color: var(--texto);
 }
 .navbar-box-logo{
   /* width: 19.5%; */
@@ -92,7 +91,7 @@ main{
 }
 
 .btn-outline-light {
-  --bs-btn-color: var(--branco)!important;
+  --bs-btn-color: var(--texto)!important;
   --bs-btn-border-color: var(--verde)!important;
   --bs-btn-hover-color: var(--branco)!important;
   --bs-btn-hover-bg: var(--verde)!important;
@@ -110,7 +109,7 @@ main{
 }
 .background-opacity {
   background-color: rgba(0, 0, 0, 0.2);  
-  color: var(--branco)!important;
+  color: var(--texte)!important;
 }
 .title-section{
   font-size: 4rem;
@@ -168,7 +167,7 @@ main{
   display: inline-block;
   width: var(--toggle-diameter);
   height: var(--toggle-diameter);
-  background-color: var(--branco);
+  background-color: var(--texto);
   border-radius: calc(var(--toggle-diameter) / 2);
   position: absolute;
   top: var(--button-toggle-offset);

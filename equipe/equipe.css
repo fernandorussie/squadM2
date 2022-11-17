@@ -109,7 +109,7 @@ main section{
     font-size: 18px;
     font-weight: 500;
     padding: 10px;
-    color: #1af38c;
+    color: var(--verde);
 }
 .lower p {
     font-size: 14px;
