@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - Lista de Espera</title>
+
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="cadastro.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="#">
+          <img
+            class="btn-back-top"
+            src="../assets/icons/seta.svg"
+            alt=""
+            srcset=""
+          />
+        </a>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-blue">
+        <div class="container-fluid">
+          <div class="navbar-box-logo">
+            <img class="navbar-logo" src="../assets/CClogo.png" alt="" />
+            <a class="navbar-brand" href="../index.html">CellCode</a>
+          </div>
+
+          <div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../produtos/produtos.html"
+                    >Conheça nosso app</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./cadastro.html"
+                    >Cadastre-se</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../equipe/equipe.html"
+                    >Nossa Equipe</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Área do apoiador
+                  </a>
+                  <ul class="dropdown-menu" style="left: unset; right: 0%">
+                    <li>
+                      <a class="dropdown-item" href="../login/login.html"
+                        >Login</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../recuperar/recuperar.html">Recuperação de senha</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="background-top"></div>
+      <div class="background-wave">
+        <div class="box-title-principal">
+          <h2 class="title-section text-center text-wrap bd-highlight">
+            Cadastro na lista de espera
+          </h2>
+        </div>
+        <!-- <h2 class="titulo">Cadastro na lista de espera</h2> -->
+        <p>
+          Se você deseja ter acesso antecipado à nossa versão
+          <strong class="color">STANDARD</strong> complete o formulário de
+          cadastro abaixo para entrar em nossa lista de espera.
+        </p>
+      </div>
+
+      <form>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingName"
+            placeholder="Seu nome aqui"
+          />
+          <label for="floatingName">Nome completo</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingEmail"
+            placeholder="Seu email aqui"
+          />
+          <label for="floatingEmail">E-mail</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingSenha"
+            placeholder="Sua senha aqui"
+          />
+          <label for="floatingSenha">Senha</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingSenha2"
+            placeholder="Sua senha aqui"
+          />
+          <label for="floatingSenha2">Confirmação de senha</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="floatingRg"
+            placeholder="Seu RG aqui"
+          />
+          <label for="floatingRg">RG</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="floatingCep"
+            placeholder="Seu CEP aqui"
+          />
+          <label for="floatingCep">CEP</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingEstado"
+            placeholder="Seu estado aqui"
+          />
+          <label for="floatingEstado">Estado</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingCidade"
+            placeholder="Sua cidade aqui"
+          />
+          <label for="floatingCidade">Cidade</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingBairro"
+            placeholder="Seu bairro aqui"
+          />
+          <label for="floatingBairro">Bairro</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingRua"
+            placeholder="Sua rua aqui"
+          />
+          <label for="floatingRua">Rua</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="floatingNumero"
+            placeholder="Seu número aqui"
+          />
+          <label for="floatingNumero">Numero</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingComplemento"
+            placeholder="Seu complemento aqui"
+          />
+          <label for="floatingComplemento">Complemento</label>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Confirmo a veracidade dos dados fornecidos.</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary submit">
+          Finalizar cadastro
+        </button>
+      </form>
+    </main>
+
+    <footer class="bg-dark text-center text-white" id="footer">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Alguns direitos reservados.
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/4175a75404.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="viacep.js"></script>
+  </body>
+</html>
