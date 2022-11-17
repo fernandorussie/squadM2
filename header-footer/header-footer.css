@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,25 +11,39 @@
   --preto: #000;
   --cinza: #393e46;
   --cinza-escuro: #222831;
-  --cinza-claro: #A9A9A9;
+  --cinza-claro: #a9a9a9;
   --bg-cinza: rgba(57, 62, 70, 0.9);
-  --bg-roxo: rgba(152,24,245, 0.9);
-  --border-card:  rgba( 50, 221, 224, 0.37);
+  --bg-roxo: rgba(152, 24, 245, 0.9);
+  --border-card: rgba(50, 221, 224, 0.37);
 
-  --img-logo: url('../../assets/CClogo.png')
+  --img-logo: url('../../assets/CClogo.png');
+}
+
+body::-webkit-scrollbar {
+  height: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--cinza);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--verde);
+  border-radius: 20px;
+  border: 4px solid var(--cinza);
 }
 
 .navbar,
 .dropdown-menu,
 .container.p-4.pb-0,
 #footer {
-  background-color: var(--cinza)!important;
+  background-color: var(--cinza) !important;
 }
-.navbar-bg{
+.navbar-bg {
   background: var(--bg-cinza) !important;
-  box-shadow: 0 8px 32px 0 rgba(57, 62, 70 0.37 );
-  backdrop-filter: blur( 3px );
-  -webkit-backdrop-filter: blur( 3px );
+  box-shadow: 0 8px 32px 0 rgba(57, 62, 70 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 .nav-link.active,
 .nav-link:focus {
@@ -38,27 +52,27 @@
 .navbar a {
   color: var(--branco);
 }
-.navbar-box-logo{
+.navbar-box-logo {
   /* width: 19.5%; */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.navbar-logo{
+.navbar-logo {
   width: 80px;
   /* background-image: url("../assets/CClogo.png");
   background-position: center;
   background-size: cover; */
 }
-.navbar-brand{
+.navbar-brand {
   font-family: 'Montserrat';
   font-style: normal;
   line-height: 130%;
   font-weight: 900;
-  font-size: 28px!important;
+  font-size: 28px !important;
   margin-left: 16px;
 }
-.title-logo{
+.title-logo {
   font-family: 'Montserrat';
   font-style: normal;
   line-height: 130%;
@@ -71,14 +85,14 @@
 }
 
 .dropdown-item:active {
-  background-color: var(--cinza);;
+  background-color: var(--cinza);
 }
-.background-top{
+.background-top {
   width: 100%;
   height: 25vh;
-  background-color: var(var(--cinza));;
+  background-color: var(var(--cinza));
 }
-header{
+header {
   width: 100%;
   position: fixed;
   top: 0;
@@ -86,22 +100,22 @@ header{
   z-index: 999;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
-main{
-  background-color: var(--cinza-escuro);;
+main {
+  background-color: var(--cinza-escuro);
   color: var(--branco);
 }
 
 .btn-outline-light {
-  --bs-btn-color: var(--branco)!important;
-  --bs-btn-border-color: var(--verde)!important;
-  --bs-btn-hover-color: var(--branco)!important;
-  --bs-btn-hover-bg: var(--verde)!important;
-  --bs-btn-hover-border-color: var(--branco)!important;
-  --bs-btn-focus-color: var(--branco)!important;
-  --bs-btn-focus-bg: var(--verde)!important;
-  --bs-btn-focus-border-color: var(--verde)!important;
+  --bs-btn-color: var(--branco) !important;
+  --bs-btn-border-color: var(--verde) !important;
+  --bs-btn-hover-color: var(--branco) !important;
+  --bs-btn-hover-bg: var(--verde) !important;
+  --bs-btn-hover-border-color: var(--branco) !important;
+  --bs-btn-focus-color: var(--branco) !important;
+  --bs-btn-focus-bg: var(--verde) !important;
+  --bs-btn-focus-border-color: var(--verde) !important;
 }
-.btn-back-top{
+.btn-back-top {
   width: 80px;
   position: fixed;
   bottom: 20px;
@@ -109,32 +123,31 @@ main{
   z-index: 999;
 }
 .background-opacity {
-  background-color: rgba(0, 0, 0, 0.2);  
-  color: var(--branco)!important;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: var(--branco) !important;
 }
-.title-section{
+.title-section {
   font-size: 4rem;
   font-weight: 900;
   text-decoration: underline var(--verde);
 }
 .box-title-principal {
-  width: 50%!important;
+  width: 50% !important;
 }
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
   .box-title-principal {
-    display: inline-block!important;
-    width: auto!important;
-    height: auto!important;
-    padding: 1rem!important;
+    display: inline-block !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 1rem !important;
   }
   .title-section {
     font-size: 3rem;
   }
 }
 
-
 /* switch botão muda tema(dark mode/light mode) */
-.switch-mode{
+.switch-mode {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,17 +156,19 @@ main{
   --button-width: 3.2em;
   --button-height: 1.8em;
   --toggle-diameter: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --button-toggle-offset: calc(
+    (var(--button-height) - var(--toggle-diameter)) / 2
+  );
   --toggle-shadow-offset: 10px;
   --toggle-wider: 3em;
   --color-grey: #cccccc;
   --color-green: var(--verde);
- }
- 
- .slider {
+}
+
+.slider {
   display: inline-block;
   width: var(--button-width);
   height: var(--button-height);
@@ -161,10 +176,10 @@ main{
   border-radius: calc(var(--button-height) / 2);
   position: relative;
   transition: 0.3s all ease-in-out;
- }
- 
- .slider::after {
-  content: "";
+}
+
+.slider::after {
+  content: '';
   display: inline-block;
   width: var(--toggle-diameter);
   height: var(--toggle-diameter);
@@ -173,28 +188,37 @@ main{
   position: absolute;
   top: var(--button-toggle-offset);
   transform: translateX(var(--button-toggle-offset));
-  box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+  box-shadow: var(--toggle-shadow-offset) 0
+    calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
   transition: 0.3s all ease-in-out;
- }
- 
- .switch input[type="checkbox"]:checked + .slider {
+}
+
+.switch input[type='checkbox']:checked + .slider {
   background-color: var(--color-green);
- }
- 
- .switch input[type="checkbox"]:checked + .slider::after {
-  transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
-  box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
- }
- 
- .switch input[type="checkbox"] {
+}
+
+.switch input[type='checkbox']:checked + .slider::after {
+  transform: translateX(
+    calc(
+      var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)
+    )
+  );
+  box-shadow: calc(var(--toggle-shadow-offset) * -1) 0
+    calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+}
+
+.switch input[type='checkbox'] {
   display: none;
- }
- 
- .switch input[type="checkbox"]:active + .slider::after {
+}
+
+.switch input[type='checkbox']:active + .slider::after {
   width: var(--toggle-wider);
- }
- 
- .switch input[type="checkbox"]:checked:active + .slider::after {
-  transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
- }
- 
+}
+
+.switch input[type='checkbox']:checked:active + .slider::after {
+  transform: translateX(
+    calc(
+      var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)
+    )
+  );
+}
