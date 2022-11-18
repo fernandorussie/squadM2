@@ -1,4 +1,81 @@
 
+// função darkmode com localStorage
+window.onload = function(){
+  getThemeFromLocalStorage()
+}
+const inputContainer = document.querySelector('#checkbox');
+const rootElement = document.documentElement;
+const video = document.querySelector('.video');
+const nav = document.querySelector('nav');
+const footer = document.querySelector('footer');
+
+const lightTheme = {
+  '--branco': '#000',
+  '--cinza': '#A9A9A9',
+  '--cinza-escuro': '#C7C8CA',
+  '--bg-cinza': 'rgba(151, 151, 149, 0.9)',
+  '--bg-card': 'rgba( 10, 10, 10, 0.15 )',
+}
+const darkTheme = {
+  '--branco': '#fff',
+  '--cinza': '#393e46',
+  '--cinza-escuro': '#222831',
+  '--bg-cinza': 'rgba(57, 62, 70, 0.9)',
+  '--bg-card': 'rgba( 255, 255, 255, 0.25 )', 
+}
+
+inputContainer.addEventListener('change', function(){
+  const isChecked = inputContainer.checked;
+  if(isChecked){
+    changeTheme(darkTheme),
+    footer.style.setProperty('--branco','#fff'),
+    nav.style.setProperty('--branco','#fff'),
+    video.setAttribute ('src', '../assets/cellcode-Iphone/video-2cell-black.mp4');
+  }else{
+    changeTheme(lightTheme),
+    footer.style.setProperty('--branco','#fff'),
+    nav.style.setProperty('--branco','#fff'),
+    video.setAttribute ('src','../assets/cellcode-Iphone/video-2cell-gray.mp4')
+  }
+})
+function changeTheme(theme){
+  for(let [prop,value ] of Object.entries(theme)){
+    changeProperty(prop, value)
+  }
+  saveThemeLocalStorage(theme)
+
+}
+function changeProperty(property, value){
+  rootElement.style.setProperty(property, value)
+}
+
+//criando localStorage
+function saveThemeLocalStorage(theme){
+  localStorage.setItem('theme', JSON.stringify(theme))
+}
+
+function isThemeEqual(firstTheme, secondTheme){
+  for(let prop in firstTheme){
+    if(firstTheme[prop] != secondTheme[prop]){
+      return false;
+    }else{
+      return true;
+    }
+  }
+}
+
+function getThemeFromLocalStorage(){
+  const theme = JSON.parse(localStorage.getItem('theme'))
+  if(isThemeEqual(theme, darkTheme)){
+    inputContainer.checked = true;
+  }else{
+    inputContainer.checked = false;
+  }
+  changeTheme(theme);
+}
+
+
+
 $('#exampleModal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget) // Botão que acionou o modal
     var recipient = button.data('whatever') // Extrai informação dos atributos data-*
@@ -18,37 +95,37 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   })
 
 
-  // FUNÇÃO PARA LocalStorage
-  localStorage.setItem('btn','true');
+  // // FUNÇÃO PARA LocalStorage
+  // localStorage.setItem('btn','true');
 
-  // Função Dark/Ligth Mode
+  // // Função Dark/Ligth Mode
 
-  function darkMode(){
-    var checkBox = document.querySelector('#checkbox');
-    var checkBoxV = document.querySelector('#checkbox').value;
-    var video = document.querySelector('.video');
-    var nav = document.querySelector('nav');
-    var footer = document.querySelector('footer');
+  // function darkMode(){
+  //   var checkBox = document.querySelector('#checkbox');
+  //   var checkBoxV = document.querySelector('#checkbox').value;
+  //   var video = document.querySelector('.video');
+  //   var nav = document.querySelector('nav');
+  //   var footer = document.querySelector('footer');
     
-    localStorage.setItem('checkBoxValue', checkBoxV)
+  //   localStorage.setItem('checkBoxValue', checkBoxV)
 
-    if (checkBox.checked == true){
-        footer.style.setProperty('--branco','#fff'),
-        nav.style.setProperty('--branco','#fff'),
-        document.documentElement.style.setProperty('--bg-cinza', 'rgba(151, 151, 149, 0.9)'),
-        document.documentElement.style.setProperty('--cinza', '#A9A9A9'),
-        document.documentElement.style.setProperty('--cinza-escuro', '#C7C8CA'),
-        document.documentElement.style.setProperty('--branco', '#000'),
-        video.setAttribute ('src', '../assets/cellcode-Iphone/video-2cell-gray.mp4');
-      } else {
-        document.documentElement.style.setProperty('--bg-cinza', 'rgba(57, 62, 70, 0.9)'),
-        document.documentElement.style.setProperty('--cinza-escuro', '#222831'),
-        document.documentElement.style.setProperty('--cinza', '#393e46'),
-        document.documentElement.style.setProperty('--branco', '#fff'),
-        video.setAttribute ('src','../assets/cellcode-Iphone/video-2cell-black.mp4')
-      }
-    }
-    document.onchange = darkMode;
+  //   if (checkBox.checked == true){
+  //       footer.style.setProperty('--branco','#fff'),
+  //       nav.style.setProperty('--branco','#fff'),
+  //       document.documentElement.style.setProperty('--bg-cinza', 'rgba(151, 151, 149, 0.9)'),
+  //       document.documentElement.style.setProperty('--cinza', '#A9A9A9'),
+  //       document.documentElement.style.setProperty('--cinza-escuro', '#C7C8CA'),
+  //       document.documentElement.style.setProperty('--branco', '#000'),
+  //       video.setAttribute ('src', '../assets/cellcode-Iphone/video-2cell-gray.mp4');
+  //     } else {
+  //       document.documentElement.style.setProperty('--bg-cinza', 'rgba(57, 62, 70, 0.9)'),
+  //       document.documentElement.style.setProperty('--cinza-escuro', '#222831'),
+  //       document.documentElement.style.setProperty('--cinza', '#393e46'),
+  //       document.documentElement.style.setProperty('--branco', '#fff'),
+  //       video.setAttribute ('src','../assets/cellcode-Iphone/video-2cell-black.mp4')
+  //     }
+  //   }
+  //   document.onchange = darkMode;
 
 //Versão funcional só nos produtos
   // function darkMode(){
