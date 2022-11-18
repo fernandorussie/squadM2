@@ -1,12 +1,5 @@
 @import '../header-footer/header-footer.css';
 
-:root {
-  --verde: #1af38c;
-  --branco: #eeeeee;
-  --cinza: #393e46;
-  --cinza-escuro: #222831;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -62,7 +55,7 @@ form label {
 }
 
 form label:last-child {
-  color: #18c071
+  color: var(--color-input)
 }
 
 .form-check-input:checked {

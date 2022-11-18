@@ -72,6 +72,7 @@ main section{
     height: 450px;
     margin: 20px;
     border-radius: 12px;
+    background: var(--bg-card);
     box-shadow: 6px 6px 10px var(--cinza), 6px 6px 20px var(--verde);
 }
 .upper {
@@ -109,7 +110,7 @@ main section{
     font-size: 18px;
     font-weight: 500;
     padding: 10px;
-    color: #1af38c;
+    color: var(--verde);
 }
 .lower p {
     font-size: 14px;
