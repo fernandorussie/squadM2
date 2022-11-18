@@ -35,23 +35,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 4px solid var(--cinza);
 }
-/* teste de localstorage */
-[data-theme="dark"] {
-  --verde: #1af38c;
-  --branco: #fff;
-  --preto: #000;
-  --cinza: #393e46;
-  --cinza-escuro: #222831;
-  --cinza-claro: #A9A9A9;
-  --bg-cinza: rgba(57, 62, 70, 0.9);
-  }
-  
-  [data-theme="light"] {
-    --branco: #000;
-    --cinza: #A9A9A9;
-    --cinza-escuro: #C7C8CA;
-    --bg-cinza: rgba(152,24,245, 0.9);
-  }
+
 .navbar,
 .dropdown-menu,
 .container.p-4.pb-0,
@@ -122,6 +106,9 @@ header {
 main {
   background-color: var(--cinza-escuro);
   color: var(--branco);
+}
+main h1{
+  color: var(--texto);
 }
 
 .btn-outline-light {
