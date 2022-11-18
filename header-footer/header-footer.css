@@ -18,8 +18,8 @@
   --texto: #fff;
   --bg-roxo: rgba(152, 24, 245, 0.9);
   --border-card: rgba(50, 221, 224, 0.37);
-
-  --img-logo: url('../../assets/CClogo.png');
+  --bg-card:rgba( 255, 255, 255, 0.25 );
+  --color-input: #18c071;
 }
 
 body::-webkit-scrollbar {

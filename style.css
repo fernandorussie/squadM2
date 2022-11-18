@@ -69,3 +69,7 @@ main{
 .imagem{
   width: 250px;
 }
+.container-home{
+  max-width: 1440px;
+  margin: 0 auto;
+}

@@ -72,6 +72,7 @@ main section{
     height: 450px;
     margin: 20px;
     border-radius: 12px;
+    background: var(--bg-card);
     box-shadow: 6px 6px 10px var(--cinza), 6px 6px 20px var(--verde);
 }
 .upper {

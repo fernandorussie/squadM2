@@ -10,12 +10,16 @@ const lightTheme = {
   '--cinza': '#393e46',
   '--cinza-escuro': '#222831',
   '--cinza-claro': '#A9A9A9',
+  '--bg-card': 'rgba( 255, 255, 255, 0.25 )',
+  '--color-input': '#18c071',
 }
 const darkTheme = {
   '--branco': '#000',
   '--cinza': '#393e46',
   '--cinza-escuro': '#A9A9A9',
   '--cinza-claro': '#A9A9A9',
+  '--bg-card': 'rgba( 10, 10, 10, 0.25 )',
+  '--color-input': '#000',
 }
 inputContainer.addEventListener('change', function(){
   const isChecked = inputContainer.checked;

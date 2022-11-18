@@ -193,7 +193,7 @@ ol li::before{
   flex-direction: column;
   padding: 10px;
   margin: 20px;
-  background: rgba( 255, 255, 255, 0.25 );
+  background: var(--bg-card);
   box-shadow: 0 8px 32px 0 var(--border-card);
   backdrop-filter: blur( 1.5px );
   -webkit-backdrop-filter: blur( 1.5px );
@@ -268,6 +268,9 @@ ol li::before{
   font-weight: 600;
   margin: 20px;
 }
+.box-supp p{
+  width: 90%;
+}
 .icon-text{
   width: 80px;
   margin-right: 20px;
@@ -294,7 +297,7 @@ ol li::before{
     justify-content: center;
     flex-direction: column;
   }
-  .box-text-bottom div {
+  .box-supp {
     flex-direction: column;
     text-align: center;
   }
@@ -359,7 +362,7 @@ ol li::before{
   .text-support {
     display: none;
   }
-  .box-text-bottom div {
+  .box-supp {
     font-size: 16px;
   }
 }
