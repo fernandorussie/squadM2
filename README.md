@@ -6,6 +6,9 @@
 # Descrição do projeto
 Projeto do Módulo 2 - Programação Orientada a Objetos do curso de Desenvolvimento Web Full-Stack da [Resilia](https://www.resilia.com.br/)
 
+Nossa squad desenvolveu o front end para apresentar um novo produto lançado pela empresa <b>FrontEnders</b>.
+Criamos um produto que pode ajudar e facilitar o dia a dia do programador e tivemos a ideia de criar um aplicativo mobile que ajuda os programadores que estão iniciando e não tem condições de ter um computador para programar, podendo assim programar no proprio dispositivo movel com facilidade.
+
 # Acesso ao projeto
 
 Você pode acessar o deploy do projeto [aqui](https://fernandorussie.github.io/squadM2/)
